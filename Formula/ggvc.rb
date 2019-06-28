@@ -6,10 +6,10 @@ class Ggvc < Formula
 
   if OS.mac?
     url "https://github.com/titenkov/gradle-git-version-calculator/releases/download/v0.0.3/gradle-git-version-calculator_0.0.3_Darwin_x86_64.tar.gz"
-    sha256 "cdbb169e1ad5d1572195465ca613cdf3fd24cfe056f27509da2f4951721f4a8c"
+    sha256 "c7e0fc3eea558cd01d130723a7aec226e91d22ba74edd3a7b44154e90b7e9a92"
   elsif OS.linux?
     url "https://github.com/titenkov/gradle-git-version-calculator/releases/download/v0.0.3/gradle-git-version-calculator_0.0.3_Linux_x86_64.tar.gz"
-    sha256 "e84dba8f2a3520a7c3df752e6802f3dae71b38530b313436eb4beca5fc30720f"
+    sha256 "e7b77c034027be809e80a711203aac453715c5dd29e5f2ea07ebdbdb7d969a9d"
   end
   
   depends_on "git"
