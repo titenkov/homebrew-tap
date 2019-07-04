@@ -2,14 +2,14 @@
 class Mkver < Formula
   desc "Calculates semantic version based on the branch and version taken from one of the sources (environment variable, gradle version, package.json, etc.)"
   homepage "https://github.com/titenkov/mkver"
-  version "0.2.0"
+  version "0.2.1"
 
   if OS.mac?
-    url "https://github.com/titenkov/mkver/releases/download/v0.2.0/mkver_0.2.0_Darwin_x86_64.tar.gz"
-    sha256 "567c9b6df004d6122d5906deab69a4ab7c331e1724679ea204c104bb60302d48"
+    url "https://github.com/titenkov/mkver/releases/download/v0.2.1/mkver_0.2.1_Darwin_x86_64.tar.gz"
+    sha256 "ea0710be23441ed87feecb7a9729cd215cc7a8f26867e9326e97bc1152d18863"
   elsif OS.linux?
-    url "https://github.com/titenkov/mkver/releases/download/v0.2.0/mkver_0.2.0_Linux_x86_64.tar.gz"
-    sha256 "06856f33ca698dea044df082bed0f3bd498a87735e5fbc1c463ff3e538bd0d51"
+    url "https://github.com/titenkov/mkver/releases/download/v0.2.1/mkver_0.2.1_Linux_x86_64.tar.gz"
+    sha256 "d34a9064dea1203b579ef77be71c275588cdc1494b6efef6c0d4b79cb3001179"
   end
   
   depends_on "git"
