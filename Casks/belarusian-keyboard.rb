@@ -6,26 +6,23 @@ cask "belarusian-keyboard" do
   url "https://github.com/titenkov/belarusian-keyboard/archive/main.zip"
 
   name "Belarusian keyboard for macOS"
-  desc "Belarusian keyboard with the right flag for macOS"
+  desc "Belarusian keyboard with the real white-red historical Belarusian flag"
 
-  artifact "belarusian-keyboard-main/be-BY.keylayout", target: "#{ENV["HOME"]}/Library/Keyboard Layouts/be-BY.keylayout"
-  artifact "belarusian-keyboard-main/be-BY.icns", target: "#{ENV["HOME"]}/Library/Keyboard Layouts/be-BY.icns"
-
-  artifact "belarusian-keyboard-main/ru-BY.keylayout", target: "#{ENV["HOME"]}/Library/Keyboard Layouts/ru-BY.keylayout"
-  artifact "belarusian-keyboard-main/ru-BY.icns", target: "#{ENV["HOME"]}/Library/Keyboard Layouts/ru-BY.icns"
+  artifact "belarusian-keyboard-main/BelKeyboard.bundle", target: "#{ENV["HOME"]}/Library/Keyboard Layouts/BelKeyboard.bundle"
 
   # postflight do
   #   system "touch", "#{ENV["HOME"]}/Library/Keyboard Layouts"
   # end
 
   caveats <<~str 
-    To use the installed keyboard, please add it in the 
-    Keyboard preferences, on 'Input Sources' tab: 
+    To use the installed keyboard, please add it in the Keyboard 
+    preferences (System Preferences > Keyboard > Input Sources): 
  
       open /System/Library/PreferencePanes/Keyboard.prefPane 
      
-    ** The keyboard is located in the 'Others' section. ** 
-    
+    ** The keyboards are located in the 'Belarusian' or 'Russian' 
+    sections next to the original ones. ** 
+
     ⬜️🟥⬜️
     Жыве вечна!
   str
